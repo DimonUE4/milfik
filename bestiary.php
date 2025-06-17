@@ -13,6 +13,7 @@ $result = mysqli_query($conn, $sql);
     <title>Yokai Bestiary</title>
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="bestiary.css">
+    <link rel="stylesheet" href="footer.css">
     <script src="bestiary.js" defer></script>
 </head>
 
@@ -72,10 +73,10 @@ $result = mysqli_query($conn, $sql);
 
 <footer>
     <div class="footer-content">
-        <h3>© 2025 Mifik</h3>
+        <p>&copy; 2025 Mifik</p>
         <ul class="social-links">
-            <li><a href="https://t.me/as_usualeverything_is_strawberry">Telegram</a></li>
-            <li><a href="https://vk.com/solkaso_o">VKontakte</a></li>
+            <li><a href="https://t.me/as_usualeverything_is_strawberry" class="cnopki1">Telegram</a></li>
+            <li><a href="https://vk.com/solkaso_o" class="cnopki1">VKontakte</a></li>
         </ul>
     </div>
 </footer>
