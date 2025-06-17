@@ -1,0 +1,301 @@
+*{
+    font-family: Papyrus; 
+}
+
+@font-face {
+    font-family: 'Papyrus';
+    src: url(Fonts/Papyrus-RU-Regular.otf);
+}
+
+.question-block {
+    display: none; /* Скрываем все блоки вопросов по умолчанию */
+}
+.active {
+    display: block; /* Показываем только активный блок */
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    margin: 0px;
+    background-image: url('img/фон\ для\ карты\ ВЕРХ.png'); 
+    overflow-x: hidden;
+    
+}
+
+
+.test-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #E3C1DB; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    margin-top: -50px; 
+}
+.options {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ea53b0b9; 
+    color: white;
+    cursor: pointer; 
+}
+button:hover {
+    background-color: #c053d6a5;
+}
+
+header {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.logo {
+    padding: 0 160px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 160px;
+    display: flex;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    color: white !important;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.2s ease;
+    display: inline-block;
+    position: relative;
+    font-family: 'Papyrus', sans-serif;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #d67ddf !important;
+    transform: scale(1.05);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #d67ddf;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+main{
+display:flex;
+justify-content: center;
+align-items: center;
+padding: 0 100px;
+height: 100%;
+}
+h2 {
+    font-size: 35px; /* Размер шрифта */
+    color: #000000; /* Цвет текста */
+    text-align: center; /* Выравнивание по центру */
+    padding-top: 10px;
+    padding-bottom: 50px; /* Отступ снизу */
+}
+
+
+.body1 {
+position: relative; 
+background-image: url('img/фон\ 1.svg'); 
+background-size: cover; 
+background-position: center; 
+height: 100vh; 
+}
+
+.body1>div{
+display: flex;
+}
+.image0{
+display: flex;
+overflow: hidden;
+padding: 20px;
+}
+.image0_1{
+height: 757px;
+width: 757px;
+}
+.text1{
+flex-direction: column;
+width: 40%;
+padding: 100px 4px;
+}
+.text1>div{
+display: flex;
+}
+.dsf {
+width: 100%;
+}
+.text1_1{
+width: 100%;
+font-family: 'Papyrus';
+font-size: 80px;
+margin-left: 140px;
+color: #000000;
+line-height: 70px;
+}
+.text1_2 { 
+width: 100%; 
+font-family: 'Papyrus'; 
+font-size: 30px; 
+margin-top: 30px; 
+margin-bottom: 30px; 
+margin-left: 140px; 
+color: #000000; 
+line-height: 40px;
+}
+
+
+.text1_3 {  
+display: flex;
+justify-content: center;  
+align-items: center;  
+height: 70px;  
+width: 60%;
+margin-left: 140px;  
+background-color: #f05576; 
+border-radius: 50px; 
+cursor: url(https://cdn.custom-cursor.com/db/15331/32/game-kleptocats-sakura-pointer.png), pointer !important;
+}
+.text1_3>a{
+text-decoration:none;
+color: #000000;
+font-family: Papyrus; 
+cursor: url(https://cdn.custom-cursor.com/db/15331/32/game-kleptocats-sakura-pointer.png), pointer !important;
+}
+.text1_3:hover{
+background-color: #4E131F;
+}
+.text1_3:hover>a{
+color: #ffffff;
+}
+.text1_3:active{
+background-color: #D75355;
+}
+p {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+label {
+font-size: 20px;
+}
+
+li {
+    font-size: 20px;
+}
+
+
+.h3 {
+    color: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+/* Медиа-запросы для адаптации под мобильные устройства */
+@media (max-width: 768px) {
+    .logo, nav ul {
+        padding: 0 1rem;
+    }
+    
+    nav li {
+        margin-left: 1rem;
+    }
+    
+    #feedbackForm {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+ 
+   }
+
+
+
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0px 10px;
+    }
+
+    .cnopki {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .test-container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p, label, li {
+        font-size: 16px;
+    }
+
+    .text1_1 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .text1_2 {
+        font-size: 16px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+  
+}
+
+ 
+

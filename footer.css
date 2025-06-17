@@ -1,0 +1,42 @@
+footer {
+    background-color: #333;
+    color: white !important;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    position: relative;
+    margin: 0 10px;
+    padding-top: 10px;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.social-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    
+}
+.social-links a:hover {
+    color: #e075e4 !important;
+}
+
+.social-links li:hover {
+    transform: translateY(-3px);
+}
